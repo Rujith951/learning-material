@@ -1,0 +1,27 @@
+GET http://127.0.0.1:8000/get/Get
+
+###
+
+POST http://127.0.0.1:8000/post/Post/
+
+{
+   "first_name" : "chapati",
+   "last_name"  : "rajma",
+   "age" : 5,
+   "city"  : "panjab"
+}
+
+###
+
+PATCH http://127.0.0.1:8000/patch/Patch/7
+
+{
+   "first_name" : "charan",
+   "last_name"  : "adivi",
+   "age" : 22,
+   "city"  : "narasaraopeta"
+
+}
+
+###
+DELETE http://127.0.0.1:8000/delete/Delete/9

@@ -1,0 +1,19 @@
+
+
+# Create your views here.
+def func(req):
+    result = []
+    y = Books.objects.select_related("auth_id").filter(title="A better wo")
+    result.append(list(y))
+
+    return JsonResponse({"error": "NA", "data": result})
+
+
+@csrf_exempt
+def updateUser(req, id):
+    if req.method == "POST":
+        result = []
+        u = User.objects.get()
+        result.append(list(u))
+        return JsonResponse({"error": "NA", "data": result})
+

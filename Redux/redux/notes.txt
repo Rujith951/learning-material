@@ -1,0 +1,33 @@
+Middleware
+----------
+
+Middleware is the suggested way to extend Redux with custom functionality.
+
+Use Middleware for logging, crash reporting, async tasks.
+
+
+
+Async Actions
+--------------
+Example with fetching a list of users from an endpoint.
+
+state =  {
+	loading: true,
+	data: [],
+	error: "",
+};
+
+ACTIONS = [
+   FETCH_USERS_REQUEST: 'FETCH_USERS_REQUEST',
+   FETCH_USERS_SUCCESS: 'FETCH_USERS_SUCCESS',
+   FETCH_USERS_FAILURE: 'FETCH_USERS_FAILURE'
+]
+
+
+Async Action Creators.
+----------------------
+
+'redux-thunk' is the standard way to define the async action Creators.
+It's a Middleware we apply to our reduxStore.
+
+thunk-middleware returns a function instead of an action object.

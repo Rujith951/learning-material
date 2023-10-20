@@ -1,0 +1,35 @@
+ GET  http://127.0.0.1:8000/app/
+
+###
+GET http://127.0.0.1:8000/jointable/
+
+###
+GET http://127.0.0.1:8000/app/fetch-payment-details/599/
+
+
+###
+POST http://127.0.0.1:8000/jointable/updateuser/1/  
+
+###
+POST http://127.0.0.1:8000/jointable/post/
+
+{
+   "first_name":"shanmuk",
+   "last_name" : "raja",
+   "age" : 14,
+   "city": "repalle"
+}
+
+###
+GET http://127.0.0.1:8000/jointable/get/
+
+###
+PATCH  http://127.0.0.1:8000/jointable/patch/6/
+
+{
+   "last_name":"dukku"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/jointable/delete/7/
